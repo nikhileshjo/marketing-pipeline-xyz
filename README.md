@@ -12,7 +12,7 @@ NOTE: The received database was corrupted so I created my own, so I've not provi
     * Windows: `my_env\Scripts\activate`
     * Mac/Linux: `source my_env/bin/activate`
 * Install necessary packages from the requirements.txt file with `pip install -r requirements.txt`
-* Place your sqlite's .db file in the folder: `data`
+* Create a folder in root directory `data` and place your sqlite's .db file in the folder and rename it to `Data Engineer_ETL Assignment.db`.
 * We're ready to run the script, execute: `python main.py`
 
 The output files are produced inside the `output` folder.

@@ -1,6 +1,16 @@
 from src.sql_solution import run_sql_solution
 from utils.main_properties import sql_output_path, pd_output_path
 from src.pandas_solution import run_data_pandas
+import os
+
+# Prepration
+# Checking for output folders
+try:
+    print("INFO: Checking output folders.")
+    os.makedirs(os.path.dirname(sql_output_path), exist_ok=True)
+    os.makedirs(os.path.dirname(pd_output_path), exist_ok=True)
+except Exception as e:
+    print(f"ERROR: Folder creation failed: {e}")
 
 
 # Processing SQL solution
