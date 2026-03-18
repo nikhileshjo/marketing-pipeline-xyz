@@ -1,0 +1,1 @@
+db_path = "data/Data Engineer_ETL Assignment.db"
