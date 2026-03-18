@@ -17,7 +17,8 @@ def run_data_pandas(db_path = db_path):
         df.groupby(["customer_id", "age", "item_name"], as_index=False)["quantity"]
         .sum()
     )
-
+    # type casting
+    df["quantity"] = df["quantity"].astype(int)
     # filtering on aggregation
     df = df[df["quantity"] > 0]
 
