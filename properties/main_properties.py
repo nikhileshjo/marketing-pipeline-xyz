@@ -1,1 +1,0 @@
-sql_output_path = "output/sql_result.csv"

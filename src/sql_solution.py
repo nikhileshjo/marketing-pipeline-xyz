@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
-from properties.conn import db_path
-from properties.sql_properties import sql_query
+from utils.conn import db_path
+from utils.sql_properties import sql_query
 
 def run_sql_solution(db_path= db_path, sql_query = sql_query):
     print("INFO: Connecting to database...")
